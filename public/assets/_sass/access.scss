@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* # events detail
+-------------------------------------------------- */
+
+#access-container{
+	.section-inner{
+		.section-contents{
+
+		}
+	}
+	.compay-info{
+		.text-container{
+			.name{
+				font-weight: bold;
+				line-height: 1;
+			}
+			.text{
+
+			}
+		}
+	}
+	#access-map{
+	}
+	.access-info{
+		position: relative;
+		&:before{
+			width: 100%; height: 100%;
+			position: absolute;
+			content: "";
+			display: block;
+			background-color: $border-color;
+		}
+		li{
+			background-color: #fff;
+			position: relative;
+			z-index: 1;
+			.title{
+				font-weight: bold;
+				&:before{
+					background-color: $key-color;
+					content: "";
+					display: inline-block;
+					@include parallelogram(-20);
+					position: relative;
+				}
+			}
+			dl{
+				dt{
+					font-weight: bold;
+				}
+				dd{
+					a{}
+				}
+			}
+		}
+	}
+}
+
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#access-container{
+		margin-bottom: 90px;
+		.section-inner{
+			width: 1080px;
+			position: relative;
+			padding-bottom: 60px;
+			&:after{
+				width: 1320px; height: 540px;
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: -80px;
+				background-color: #f3f2f0;
+			}
+			.section-contents{
+
+			}
+		}
+		.compay-info{
+			margin-bottom: 42px;
+			.logo{
+				width: 285px;
+				float: left;
+				svg{
+					width: 285px; height: 60px;
+				}
+			}
+			.text-container{
+				width: 705px;
+				float: right;
+				.name{
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+				.text{
+
+				}
+			}
+		}
+		#access-map{
+			width: 100%; height: 420px;
+			margin-bottom: 50px;
+		}
+		.access-info{
+			display: table;
+			&:before{
+				top: 10px; left: 10px;
+			}
+			li{
+				display: table-cell;
+				width: 360px;
+				// width : -webkit-calc(33.3% - 1px) ;
+				// width : calc(33.3% - 1px) ;
+				padding: 30px 0;
+				// float: left;
+				border-right: 1px solid $border-color;
+				&:last-child{
+					// width: 33.4%;
+					border: 0;
+				}
+				>*{
+					padding-left: 27px;
+					padding-right: 27px;
+				}
+				.title{
+					font-size: 18px;
+					margin-bottom: 20px;
+					&:before{
+						width: 8px; height: 8px;
+						margin-right: 8px;
+						top: -4px;
+					}
+				}
+				dl{
+					margin-bottom: 10px;
+					dt{
+					}
+					dd{
+						a{}
+					}
+				}
+			}
+		}
+	}
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+
+
+	#access-container{
+		.section-inner{
+			position: relative;
+			padding-bottom: 60px;
+			&:after{
+				width: 100%; height: 100%;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0; left: 0;
+				background-color: #f3f2f0;
+			}
+			.section-contents{
+
+			}
+		}
+		.compay-info{
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 25px;
+			background-color: #fff;
+			.logo{
+				width: 235px;
+				margin-bottom: 18px;
+				svg{
+					width: 235px; height: 50px;
+				}
+			}
+			.text-container{
+				.name{
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+				.text{
+					span{}
+				}
+			}
+		}
+		#access-map{
+			width: 100%; height: 255px;
+			margin-bottom: 15px;
+		}
+		.access-info{
+			margin-top: 30px;
+			margin-left: 20px;
+			margin-right: 20px;
+			&:before{
+				top: 10px; left: 10px;
+			}
+			li{
+				padding: 20px;
+				border-bottom: 1px solid $border-color;
+				&:last-child{
+					border-bottom: 0;
+				}
+				.title{
+					font-size: 15px;
+					margin-bottom: 12px;
+					&:before{
+						width: 6px; height: 6px;
+						margin-right: 6px;
+						top: -3px;
+					}
+				}
+				dl{
+					margin-bottom: 10px;
+					dt{
+					}
+					dd{
+						a{}
+					}
+				}
+			}
+		}
+	}
+
+}

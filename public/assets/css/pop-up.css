@@ -1,0 +1,160 @@
+/*---------------- POP-UP -------------------*/
+.btn-close {
+  background: url(../img/close-icon.png) no-repeat 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  right: -40px;
+  position: absolute;
+  top: -40px;
+  width: 40px;
+  z-index: 503;
+}
+.btn-close-fix {
+  right: -45px;
+  top: 0px;
+}
+.popup-cont {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 0;
+  width: 100%;
+}
+.popup-hide {
+    display: none;
+}
+.to-popup {
+  background: #F9F9F9;
+  color: #333333;
+  display: none;
+  height: auto;
+  left: 47%;
+  margin-left: -31%;
+  padding: 15px;
+  position: fixed;
+  top: 150px;
+  width: 70%;
+  z-index: 90;
+}
+.background-popup {
+  background:#000;
+  display:none;
+  height:100%;
+  left:0px;
+  position: fixed;
+  top:0px;
+  width:100%;
+  z-index:85;
+}
+.popup-cont h2 {
+  font-size: 1.4rem;
+  _font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.popup-cont p {
+  font-size: 1.0rem;
+  _font-size: 1.4rem;
+  line-height: 28px;
+}
+/*
+.section-container .section-inner.top-inner {
+  max-width: 1225px;
+  width: 100%;
+}
+*/
+.title-pop {
+  clear: both;
+  color: #000000;
+  font-size: 1.8rem;
+  line-height: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+/*
+#colorbox * {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+*/
+.button.pop-btn105 {
+  background: linear-gradient(to top, #cc8400 0%, #FFA500 100%);
+  background: -moz-linear-gradient(to top, #cc8400 0%, #FFA500 100%);
+  background: -o-linear-gradient(to top, #cc8400 0%, #FFA500 100%);
+  background: -ms-linear-gradient(to top, #cc8400 0%, #FFA500 100%);
+  background: -webkit-linear-gradient(bottom, #cc8400 0%, #FFA500 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+ul.list-checking2 {
+  padding: 0;
+}
+ul.list-checking2 li {
+  margin: 0 20px 0 0;
+}
+.w80 {
+  width: 80px;
+}
+.button.btn-109 {
+  background: #92d050;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  min-width: 240px;
+  padding: 30px;
+}
+.txct-total ol.non-num li {
+  list-style: none;
+}
+.popup-wrap h2 {
+  border: 1px dashed #808080;
+  padding: 10px 0;
+  text-align: center;
+  width: 98%;
+}
+.popup-wrap div.cont-inner {
+  border: 1px dashed #808080;
+  padding: 10px 4%;
+  text-align: left;
+  width: 90%;
+}
+
+.button {
+    background-color: #efefef;
+    border: 1px solid #333;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 0px;
+    min-width: 70px;
+    padding: 20px 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button:hover {
+    background-color: rgb(37, 79, 116);
+    color: #fff;
+    cursor: pointer;
+}
+.tcenter {
+    text-align: center;
+}
+.m-t15 {
+    margin-top: 15px;
+}
+
+.poptext {
+	font-size: 20px;
+}
+
+.con-popup {
+    left: 42%;
+    top: 60px;
+}

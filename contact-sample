@@ -1,0 +1,74 @@
+<div class="form-wrap clearfix">
+							<dl class="clearfix">
+								<dt class="required">お問い合わせの種類</dt>
+								<dd>
+								<div class="select w440">
+[select contact_address id:contact_address "info@startuphub.tokyo" "press@startuphub.tokyo"]
+								</div>
+[hidden contact_type id:contact_type class:text class:d_none]
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">お名前</dt>
+								<dd>
+[text* name_last id:name_last class:text class:half class:smp-half class:smp-float placeholder "姓"]
+[text* name_first id:name_first class:text class:half class:smp-half class:smp-float placeholder "名"]
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">お名前（ふりがな）</dt>
+								<dd>
+[text* hiragana_name_last id:hiragana_name_last class:text class:half class:smp-half class:smp-float placeholder "姓（ふりがな）"]
+[text* hiragana_name_first id:hiragana_name_first class:text class:half class:smp-half class:smp-float placeholder "名（ふりがな）"]
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">メールアドレス</dt>
+								<dd class="clearfix">
+
+[email* email id:email class:text class:w440 placeholder "例）xxxxx@xxxxx.co.jp"]
+<span class="unit right">半角英数字</span>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">メールアドレス（確認）</dt>
+								<dd class="clearfix">
+[email* emailcheck id:emailcheck class:text class:w440 placeholder "例）xxxxx@xxxxx.co.jp"]
+<span class="unit right">半角英数字</span>
+									<p class="caution-text">※確認のためコピーせずにもう一度入力してください</p>
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">電話番号</dt>
+								<dd>
+[tel tel id:tel class:text class:w180 maxlength:13 placeholder "例）000-0000-0000"]
+								</dd>
+							</dl>
+							<dl class="clearfix">
+								<dt class="required">お問い合わせ内容</dt>
+								<dd>
+[textarea content id:content class:text placeholder "お問合わせ内容をご記入ください"]
+								</dd>
+							</dl>
+						</div>
+
+						<div class="btn-list clearfix">
+							<div class="btn w160 h60 icon-none back">
+								<div class="btn-inner clear">
+									<a class="overlay-text" id="reset-btn" href="">
+										<span class="text en">RESET</span>
+									</a>
+									<div class="line"></div>
+									<div class="line2"></div>
+								</div>
+							</div>
+							<div id="submit-btn" class="btn">
+								<div class="btn-inner black">
+									<button id="submit-btn" type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" onClick="ga('send', 'contact', 'お問い合わせフォーム送信', 'クリック', 'ボディ', 1);">
+										<span class="text en">SUBMIT</span>
+									</button>
+									<div class="line"></div>
+									<div class="line2"></div>
+								</div>
+							</div>
+						</div><!--btn_list-->

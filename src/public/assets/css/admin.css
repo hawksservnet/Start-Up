@@ -1,0 +1,38 @@
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+td.url_column,
+th.url_column {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.table-responsive > table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  }
+.confirm div {
+  word-wrap: break-word;
+  }
+
+.long-label {
+  word-wrap: break-word;
+  }

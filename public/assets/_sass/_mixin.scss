@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+$smp-small:  "only all and (max-width:320px)";
+$smp-middle:  "only all and (max-width:350px)";
+$smp:  "only all and (max-width:750px)";
+$smp-lauge:  "only all and (max-width:750px) and (min-width:400px)";
+$tablet:  "only all and (max-width:910px) and (min-width:751px)";
+$pc-small:  "only all and (max-width:1280px) and (min-width:751px)";
+$pc-lauge:  "only all and (min-width:1601px)";
+$pc-all:  "only all and (min-width:751px)";
+
+
+/* [ variable ]
+-------------------------------------------------*/
+
+/* font */
+$key-color:#669d11;
+$key-color-dark:#5a8b0f;
+$border-color:#e4e4e3;
+$font-color:#282b30;
+/* font */
+
+/*  */
+@mixin pc-width{
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin sp-width{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+@mixin sp-width-padding{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+@mixin sp-min-width{
+	min-width: 270px;
+}
+
+
+/* [ font style ]
+-------------------------------------------------*/
+
+@mixin font-gothic{
+	font-family: YuGothic, '游ゴシック','Noto Sans JP',"Meiryo","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+}
+@mixin font-mityou{
+	font-family: YuMincho, '游明朝',"Times New Roman","Hiragino Mincho ProN","ヒラギノ明朝 Pro W3","HGS明朝B","ＭＳ Ｐ明朝",serif,"Meiryo","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+}
+@mixin font-en{
+	font-family: 'Roboto Condensed';
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+
+/* [ opacity ]
+-------------------------------------------------*/
+@mixin opacity($num){
+	-ms-filter: "alpha(opacity=$num)"; /* IE8 */
+	opacity: $num/100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$num)";
+	//display: inline-block\9;
+}
+
+/* [ blur ]
+-------------------------------------------------*/
+
+@mixin blur($num){
+	-webkit-filter: blur($num + px);
+	filter: blur($num + px);
+}
+
+/* [ radius ]
+-------------------------------------------------*/
+
+@mixin radius($num){
+	-webkit-border-radius:$num;
+	-moz-border-radius:$num;
+	border-radius:$num;
+}
+
+/* [ easing ]
+-------------------------------------------------*/
+
+@mixin easing($speed){
+	transition: all $speed+s ease-in;
+	-moz-transition: all $speed+s ease-in;
+	-webkit-transition: all $speed+s ease-in;
+	-ms-transition: all $speed+s ease-in;
+}
+@mixin easing-linear($speed){
+	transition: all $speed+s linear;
+	-moz-transition: all $speed+s linear;
+	-webkit-transition: all $speed+s linear;
+	-ms-transition: all $speed+s linear;
+}
+@mixin easing-out($speed){
+	transition: all $speed+s cubic-bezier(0.23, 1, 0.32, 1);
+	-moz-transition: all $speed+s cubic-bezier(0.23, 1, 0.32, 1);
+	-webkit-transition: all $speed+s cubic-bezier(0.23, 1, 0.32, 1);
+	-ms-transition: all $speed+s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@mixin easing-smooth($speed){
+	transition: all $speed+s cubic-bezier(.645,.045,.355,1);
+	-moz-transition: all $speed+s cubic-bezier(.645,.045,.355,1);
+	-webkit-transition: all $speed+s cubic-bezier(.645,.045,.355,1);
+	-ms-transition: all $speed+s cubic-bezier(.645,.045,.355,1);
+}
+@mixin easing-original($speed){
+	transition: all $speed+s cubic-bezier(0.075,.82,.565,1);
+	-moz-transition: all $speed+s cubic-bezier(0.075,.82,.565,1);
+	-webkit-transition: all $speed+s cubic-bezier(0.075,.82,.565,1);
+	-ms-transition: all $speed+s cubic-bezier(0.075,.82,.565,1);
+}
+
+/* [ transform ]
+-------------------------------------------------*/
+
+@mixin rotate($num){
+	transform: rotate($num+deg);
+	-ms-transform: rotate($num+deg);
+	-moz-transform: rotate($num+deg);
+	-webkit-transform: rotate($num+deg);
+}
+
+@mixin rotateY($num){
+	transform: rotateY($num+deg);
+	-ms-transform: rotateY($num+deg);
+	-moz-transform: rotateY($num+deg);
+	-webkit-transform: rotateY($num+deg);
+}
+
+@mixin scale($num){
+	transform:scale($num);
+	-moz-transform:scale($num);
+	-webkit-transform:scale($num);
+	-ms-transform:scale($num);
+}
+
+@mixin delay($num){
+	transition-delay:$num+s !important;
+	-moz-transition-delay:$num+s !important;
+	-webkit-transition-delay:$num+s !important;
+	-o-transition-delay:$num+s !important;
+	-ms-transition-delay:$num+s !important;
+}
+
+@mixin translateX($num){
+	-webkit-transform: translateX($num);
+	-moz-transform: translateX($num);
+	-ms-transform: translateX($num);
+	-o-transform: translateX($num);
+	transform: translateX($num);
+}
+
+@mixin translateY($num){
+	-webkit-transform: translateY($num);
+	-moz-transform: translateY($num);
+	-ms-transform: translateY($num);
+	-o-transform: translateY($num);
+	transform: translateY($num);
+}
+
+@mixin translate($x,$y){
+	-webkit-transform: translate($x,$y);
+	-moz-transform: translate($x,$y);
+	-ms-transform: translate($x,$y);
+	-o-transform: translate($x,$y);
+	transform: translate($x,$y);
+}
+
+@mixin parallelogram($n){
+	-webkit-transform: skew($n + deg);
+	-moz-transform: skew($n + deg);
+	-o-transform: skew($n + deg);
+	-ms-transform: skew($n + deg);
+}
+
+/* [ layout ]
+-------------------------------------------------*/
+
+@mixin svgCenter(){
+	width: 100%; height: 100%;
+	position: relative;
+	display: block;
+	>svg{
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		margin: auto;
+		display: block;
+	}
+}
+@mixin photoCover(){
+	position: relative;
+	&:before{
+		width: 100%; height: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		content: "";
+		display: block;
+	}
+	&:before{
+		// background: url("../img/common/photo_patern.png?2") repeat top left;
+		background: url("../img/common/photo_patern.svg") repeat top left;
+		background-size: initial;
+		@include opacity(50);
+	}
+}
+@mixin photoCoverDark(){
+	position: relative;
+	&:before,
+	&:after{
+		width: 100%; height: 100%;
+		position: absolute;
+		top: 0; left: 0;
+		content: "";
+		display: block;
+	}
+	&:before{
+		// background: url("../img/common/photo_patern.png?2") repeat top left;
+		// background-size: initial;
+		background: url("../img/common/photo_patern.svg") repeat top left;
+		background-size: 2px;
+		@include opacity(50);
+	}
+	&:after{
+		background-color: rgba(51,49,231,0.5);
+	}
+}
+
+@mixin dropShadow(){
+	box-shadow: 80px 80px 98px 0px rgba(164,168,174,0.2);
+}
+
+@mixin flashHover(){
+	position: relative;
+	&:before{
+		width: 0; height: 100%;
+		content: "";
+		display: block;
+		background-color: $key-color;
+		display: block;
+		position: absolute;
+		top: 0; left: 0;
+	}
+
+	&:hover{
+		color:#fff;
+		*{
+			color:#fff;
+			z-index: 100;
+			display: inline-block;
+		}
+		&:before{
+			animation: m-flash .28s ease-in-out .0s both alternate;
+		}
+	}
+}
+
+@mixin flashHoverChild{
+	>*{
+
+		width: 100%; height: 100%;
+		position: relative;
+		display: block;
+		&:before{
+			width: 0; height: 100%;
+			content: "";
+			display: block;
+			background-color: $key-color;
+			display: block;
+			position: absolute;
+			top: 0; left: 0;
+		}
+
+	}
+
+		&:hover{
+			color:#fff;
+			*{
+				color:#fff;
+			}
+			>*{
+				>*{
+					display: block;
+					position: relative;
+					z-index: 1;
+				}
+				&:before{
+					animation: m-flash .28s ease-in-out .0s both alternate;
+				}
+			}
+		}
+
+}

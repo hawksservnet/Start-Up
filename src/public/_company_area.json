@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Area",
+		"type": "trader",
+		"lat": 35.70198643283556,
+        "lng": 139.77845191955566,
+		"icon": "map_icon01.png",
+		"icon_size_w": 24,
+		"icon_size_h": 23,
+		"icon_posi_w": 12,
+		"icon_posi_h": 20
+	},
+	{
+		"name": "Area",
+		"type": "trader",
+		"lat": 35.69682846958083,
+        "lng": 139.78463172912598,
+		"icon": "map_icon02.png",
+		"icon_size_w": 24,
+		"icon_size_h": 23,
+		"icon_posi_w": 12,
+		"icon_posi_h": 20
+	},
+	{
+		"name": "Area",
+		"type": "trader",
+		"lat": 35.69201871676694,
+        "lng": 139.77767944335938,
+		"icon": "map_icon01.png",
+		"icon_size_w": 24,
+		"icon_size_h": 23,
+		"icon_posi_w": 12,
+		"icon_posi_h": 20
+	}
+]

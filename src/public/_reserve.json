@@ -1,0 +1,25 @@
+[
+	{
+		"name": "現在地",
+		"type": "here",
+		"lat": 35.683934,
+        "lng": 139.769984,
+		"icon": "icon_here.png",
+		"icon_size_w": 56,
+		"icon_size_h": 56,
+		"icon_posi_w": 28,
+		"icon_posi_h": 28
+
+	},
+	{
+		"name": "SoftBank",
+		"type": "trader",
+		"lat": 35.68762695000247,
+        "lng": 139.77776527404785,
+		"icon": "icon_port.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	}
+]

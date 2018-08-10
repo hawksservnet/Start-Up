@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+@import "mixin";
+
+#scroll-body,#document{
+	overflow: inherit !important;
+	height: auto !important;
+	position: relative !important;
+}
+
+#header-container,#footer-container{
+	display: none !important;
+}
+
+#document{
+	width: 100% !important;
+	height: auto !important;
+	#document-inner{
+		width: 100% !important;
+	}
+	#loader-container{
+		width: 100% !important;
+		height: auto !important;
+	}
+	.btn{
+		display: none;
+	}
+	.section-container{
+		margin: 0 auto;
+	}
+}
+
+#scroll-body{
+	width: 100% !important;
+	height: auto !important;
+	overflow: visible !important;
+	outline: inherit !important;
+	.scroll-content{
+		transform: none !important;
+	}
+	.scrollbar-track{
+		display: none !important;
+	}
+	.scrollbar-thumb{
+		display: none !important;
+	}
+}
+
+#page-title{
+	margin-bottom: 48px;
+	margin-top: 0px;
+	.page-title-inner{
+		position: relative;
+		height: 80px;
+		.en{
+			font-size: 50px;
+			line-height: 80px;
+			float: left;
+		}
+		.jp{
+			font-size: 16px;
+			line-height: 80px;
+			padding-left: 14px;
+			vertical-align: middle;
+			float: left;
+		}
+		&:before{
+			content: "";
+			display: block;
+			width: 28px; height: 7px;
+			background-color: #669d11;
+			position: absolute;
+			top: 8%;
+		}
+	}
+}
+#page-title .page-title-inner .en {
+	display: inline-block;
+		font-size: 32px;
+	line-height: 80px;
+	padding-left: 50px;
+}
+#page-title .page-title-inner .jp {
+	display: inline;
+	line-height: 80px;
+	vertical-align: middle;
+}
+
+#event{
+	width: 210mm; /* needed for Chrome */
+	height:251mm;
+	#document{
+		zoom: 0.8;
+		.btn{
+			display: none;
+		}
+		.section-container{
+			width: 100% !important;
+			.section-inner{
+				width: 100% !important;
+			}
+		}
+		#events-detail-container{
+			.photo{
+				.sp{
+					width: 100%;
+					padding-top: 40%;
+					max-height: 410px;
+				}
+			}
+		}
+		#events-main{
+			page-break-after: always;
+			.btn{
+				margin-bottom: 0; 
+			}
+		}
+		.text-container{
+			// margin: 25px auto 40px;
+		}
+		.info-container{
+			margin-bottom: 0px;
+			margin: 0 auto;
+			.table-container{
+				float: left;
+				width: 45%;
+				table{
+					width: 100%;
+					tr{
+						th,
+						td{
+							padding: 15px 20px;
+						}
+						th{
+							width: 60px;
+						}
+						td{
+							a{
+							}
+						}
+					}
+				}
+			}
+			.map-container{
+				width: 45%;
+				float: right;
+				#map{
+					width: 100%;
+					height: 330px;
+				}
+			}
+		}
+	}
+}
+
+#events-detail-container,
+#information-detail-container{
+	.detail-section-container{
+		.events-title-container,
+		.information-title-container{
+			margin-bottom: 60px;
+			.events-title-inner,
+			.information-title-inner{
+				.date{
+					top: -13px; left: -5px;
+					.date-inner{
+						padding: 0 13px;
+						// height: 25px;
+						// line-height: 25px;
+					}
+				}
+				.title{
+					font-weight: bold;
+					font-size: 24px;
+					padding: 22px 80px 22px 50px;
+				}
+				.category{
+					position: absolute;
+					top: 0; bottom: 0;
+					margin: auto;
+					height: 12px;
+					line-height: 12px;
+					right: 50px;
+					font-size: 12px;
+				}
+			}
+		}
+		.events-title-container{
+			margin-bottom: 20px !important;
+		}
+		&#events-main{
+			.text-container{
+				margin-top: 25px;
+				margin-bottom: 40px;
+			}
+			.info-container{
+				margin-bottom: 20px;
+				.table-container{
+					float: left;
+					width: 45%;
+					table{
+						width: 100%;
+						tr{
+							th,
+							td{
+								padding: 15px 20px;
+							}
+							th{
+								width: 60px;
+							}
+							td{
+								a{
+								}
+							}
+						}
+					}
+				}
+				.map-container{
+					width: 45%;
+					float: right;
+					#map{
+						width: 100%;
+						height: 330px;
+					}
+				}
+			}
+			.btn{
+				margin-bottom: 80px;
+			}
+		}
+		img{
+			width: auto;
+			max-width: 1080px;
+		}
+	}
+	#free-area{
+		padding-top: 40px;
+		padding-bottom: 80px;
+		margin-bottom: 60px;
+		.btn{
+			// margin-top: 60px;
+		}
+	}
+
+	#detail-cat_tag-container{
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin-bottom: 70px;
+		.category{
+			display: inline-block;
+			float: left;
+			margin-right: 40px;
+			a{
+				height: 24px;
+				line-height: 24px;
+				padding-left: 7px;
+				padding-right: 7px;
+			}
+		}
+		.tag-list{
+			float: left;
+			top: -12px;
+			li{
+				a{
+
+				}
+			}
+		}
+	}
+
+}
+
+.chrome{
+	#event{
+		.section-container{
+			margin-left: -20px;
+		}
+	}
+}
+
+.ie{
+	#event{
+		zoom: 1;
+		width: 100%;
+		height:251mm;
+		#document{
+			zoom: 1;
+		}
+		#document{
+			#page-title{
+				margin-bottom: 28px;
+			}
+			.btn{
+				display: none;
+			}
+			.section-container{
+				margin-left: -20px;
+			}
+			#events-detail-container{
+				.events-title-container{
+					margin-bottom: 30px;
+					.title{
+					}
+				}
+				.photo{
+					.sp{
+						width: 100%;
+						padding-top: 40%;
+						max-height: 410px;
+					}
+				}
+				.events-title-inner{
+					.title{
+						font-size: 18px;
+					}
+				}
+			}
+			.text-container{
+				margin: 25px auto 40px;
+			}
+		}
+		
+	}
+}
+
+
+#access-container{
+	.section-inner{
+		.section-contents{
+
+		}
+	}
+	.compay-info{
+		.text-container{
+			.name{
+				font-weight: bold;
+				line-height: 1;
+			}
+			.text{
+
+			}
+		}
+	}
+	#access-map{
+	}
+	.access-info{
+		position: relative;
+		&:before{
+			width: 100%; height: 100%;
+			position: absolute;
+			content: "";
+			display: block;
+			background-color: $border-color;
+		}
+		li{
+			background-color: #fff;
+			position: relative;
+			z-index: 1;
+			.title{
+				font-weight: bold;
+				&:before{
+					background-color: $key-color;
+					content: "";
+					display: inline-block;
+					@include parallelogram(-20);
+					position: relative;
+				}
+			}
+			dl{
+				dt{
+					font-weight: bold;
+				}
+				dd{
+					a{}
+				}
+			}
+		}
+	}
+}
+
+
+/* PC =================================== */
+
+/* PC　ALL */
+#access{
+	width: 210mm; /* needed for Chrome */
+	height:251mm;
+	margin-top: -50px;
+	#document{
+		#events-detail-container{
+			.photo{
+				.sp{
+					width: 100%;
+					padding-top: 10%;
+					max-height: 410px;
+				}
+			}
+		}
+		.text-container{
+			margin: 25px auto 40px;
+		}
+		.info-container{
+			margin-bottom: 100px;
+			margin: 0 auto;
+			.table-container{
+				float: left;
+				width: 45%;
+				table{
+					width: 100%;
+					tr{
+						th,
+						td{
+							padding: 15px 20px;
+						}
+						th{
+							width: 60px;
+						}
+						td{
+							a{
+							}
+						}
+					}
+				}
+			}
+			.map-container{
+				width: 45%;
+				float: right;
+				#map{
+					width: 100%;
+					height: 330px;
+				}
+			}
+		}
+	}
+
+	#access-container{
+		margin-bottom: 90px;
+		.section-inner{
+			position: relative;
+			padding-bottom: 60px;
+			&:after{
+				width: 120%; height: 540px;
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: -10%;
+				margin-top: 50%;
+				background-color: #f3f2f0;
+			}
+		}
+		.compay-info{
+			.logo{
+				width: 285px;
+				float: left;
+				svg{
+					width: 285px; height: 60px;
+				}
+			}
+			.text-container{
+				width: 50%;
+				float: right;
+				.name{
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+				.text{
+
+				}
+			}
+		}
+		#access-map{
+			width: 100%; height: 320px;
+			margin-bottom: 30px;
+		}
+		.access-info{
+			display: table;
+			&:before{
+				top: 10px; left: 10px;
+			}
+			li{
+				display: table-cell;
+				width: 360px;
+				padding: 30px 0;
+				border-right: 1px solid $border-color;
+				&:last-child{
+					border: 0;
+				}
+				>*{
+					padding-left: 27px;
+					padding-right: 27px;
+				}
+				.title{
+					font-size: 18px;
+					margin-bottom: 20px;
+					&:before{
+						width: 8px; height: 8px;
+						margin-right: 8px;
+						top: -4px;
+					}
+				}
+				dl{
+					margin-bottom: 10px;
+					dt{
+					}
+					dd{
+						a{}
+					}
+				}
+			}
+		}
+	}
+}
+
+.ie{
+	#access{
+		zoom: 1;
+		width: 100%;
+		#document{
+			//zoom: 0.85;
+			.section-container{
+				//width: 1280px;
+				margin: 0 auto;
+				.section-inner{
+				}
+			}
+		}
+	}
+}
+
+.chrome{
+	#access{
+		#document{
+			.section-inner{
+				width: 90%;
+				margin: 0 auto;
+				.section-contents{
+					width: 100%;
+				}
+			}
+			.access-info{
+				li{
+					width: 33%;
+				}
+			}
+		}
+	}
+
+}
+
+#page-top{
+	display: none;
+}

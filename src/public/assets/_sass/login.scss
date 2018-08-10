@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* #
+-------------------------------------------------- */
+
+#login-container{
+  .section-title-inner{
+    position: relative;
+    &:before{
+      content: "";
+      display: block;
+      @include parallelogram(-20);
+      background-color: $key-color;
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0;
+      margin-top: auto;
+      margin-bottom:auto;
+    }
+    .en{
+      @include font-en;
+    }
+    .jp{
+      vertical-align: middle;
+      font-weight: bold;
+    }
+  }
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-all} {
+  #login-container{
+    padding-bottom: 100px;
+    .section-title{
+    	// margin-bottom: 48px;
+    	margin-top: 26px;
+    	.section-title-inner{
+    		@include pc-width;
+    		height: 100px;
+    		>*{
+    			float: left;
+    		}
+    		&:before{
+    			width: 28px; height: 7px;
+    		}
+    		.en{
+    			font-size: 34px;
+    			line-height: 100px;
+    			padding-left: 50px;
+    		}
+    		.jp{
+    			font-size: 16px;
+    			line-height: 100px;
+    			padding-left: 14px;
+    		}
+    	}
+    }
+    .section-inner{
+      background: #f3f2f0;
+    }
+    #login_wrap{
+      padding-top: 80px;
+      padding-bottom: 60px;
+      .form_list{
+        li{
+          margin-bottom: 20px;
+          dl{
+            display: table;
+            margin: 0 auto;
+            dt{
+              width: 60px;
+              font-size: 14px;
+              display: table-cell;
+            }
+            dd{
+              display: table-cell;
+              input{
+                height: 40px;
+                line-height: 40px;
+                width: 420px;
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+      .action{
+        margin-top: 50px;
+        .btn{
+          .btn-inner{
+            button{
+              font-size: 16px;
+              font-weight: bold;
+              letter-spacing: .1em;
+            }
+          }
+        }
+        .text_remind{
+          text-align: center;
+          margin-top: 35px;
+          a{
+            color: #628618;
+            font-size: 14px;
+            &:after{
+              margin-left: 5px;
+              width: 23px;
+              height: 8px;
+              content: "";
+              display: inline-block;
+              margin-top: auto;
+              margin-bottom: auto;
+              background: url(../img/common/link-arrow_green.svg) no-repeat left top;
+            }
+          }
+        }
+      }
+    }
+  }
+  #forgot_password, #remind_password{
+    padding-top: 55px;
+    padding-bottom: 80px;
+    .section-inner{
+    }
+    p.text{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    #pass_wrap{
+      margin-top: 30px;
+      background: #f3f2f0;
+      padding-top: 80px;
+      padding-bottom: 60px;
+      .form_list{
+        li{
+          margin-bottom: 20px;
+          dl{
+            display: table;
+            margin: 0 auto;
+            dt{
+              width: 120px;
+              font-size: 14px;
+              display: table-cell;
+              font-weight: bold;
+            }
+            dd{
+              display: table-cell;
+              input{
+                height: 40px;
+                line-height: 40px;
+                width: 420px;
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+      .action{
+        margin-top: 50px;
+        .btn{
+          .btn-inner{
+            button{
+              font-size: 16px;
+              font-weight: bold;
+              letter-spacing: .1em;
+            }
+          }
+        }
+        .text_remind{
+          text-align: center;
+          margin-top: 35px;
+          a{
+            color: #628618;
+            font-size: 14px;
+            &:after{
+              margin-left: 5px;
+              width: 23px;
+              height: 8px;
+              content: "";
+              display: inline-block;
+              margin-top: auto;
+              margin-bottom: auto;
+              background: url(../img/common/link-arrow_green.svg) no-repeat left top;
+            }
+          }
+        }
+      }
+    }
+    .action{
+      margin-top: 50px;
+      .btn{
+        .btn-inner{
+          button{
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: .1em;
+          }
+        }
+      }
+    }
+  }
+} // [ $pc-all END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+  #login-container{
+    padding-bottom: 50px;
+    .section-title{
+    	// margin-bottom: 48px;
+    	margin-top: 0;
+    	.section-title-inner{
+        margin: 0 20px;
+    		height: 60px;
+    		>*{
+    			float: left;
+    		}
+    		&:before{
+    			width: 13px; height: 3px;
+    		}
+    		.en{
+    			font-size: 20px;
+    			line-height: 60px;
+    			padding-left: 35px;
+    		}
+    		.jp{
+    			font-size: 10px;
+    			line-height: 60px;
+    			padding-left: 14px;
+    		}
+    	}
+    }
+    .section-inner{
+      margin-top: 5px;
+      background: #f3f2f0;
+    }
+    #login_wrap{
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .form_list{
+        padding: 0 20px;
+        li{
+          margin-bottom: 15px;
+          dl{
+            display: table;
+            margin: 0 auto;
+            width: 100%;
+            dt{
+              width: 55px;
+              font-size: 14px;
+              display: table-cell;
+              font-weight: bold;
+            }
+            dd{
+              display: table-cell;
+              input{
+                height: 45px;
+                line-height: 45px;
+                background: #fff;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .action{
+        margin-top: 30px;
+        .btn{
+          height: 60px;
+          .btn-inner{
+            button{
+              line-height: 60px;
+              font-size: 16px;
+              font-weight: bold;
+              letter-spacing: .1em;
+            }
+          }
+        }
+        .text_remind{
+          text-align: center;
+          margin-top: 20px;
+          a{
+            color: #628618;
+            font-size: 14px;
+            &:after{
+              margin-left: 5px;
+              width: 23px;
+              height: 8px;
+              content: "";
+              display: inline-block;
+              margin-top: auto;
+              margin-bottom: auto;
+              background: url(../img/common/link-arrow_green.svg) no-repeat left top;
+            }
+          }
+        }
+      }
+    }
+  }
+  #forgot_password, #remind_password{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    .section-inner{
+    }
+    p.text{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .action{
+      margin-top: 30px;
+      .btn{
+        height: 60px;
+        .btn-inner{
+          a,button{
+            line-height: 60px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: .1em;
+          }
+        }
+      }
+    }
+    #pass_wrap{
+      margin-top: 15px;
+      background: #f3f2f0;
+      padding: 50px 20px;
+      .form_list{
+        li{
+          margin-bottom: 20px;
+          dl{
+            margin: 0 auto;
+            dt{
+              width: 120px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            dd{
+              margin-top: 5px;
+              input{
+                height: 45px;
+                line-height: 45px;
+                width: 100%;
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} // [ $smp END ]

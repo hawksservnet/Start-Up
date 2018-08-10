@@ -1,0 +1,366 @@
+#mypage .mypage-navi .inner ul li {
+    width: 25%;
+}
+
+    #mypage .mypage-navi .inner ul li a {
+        outline: none;
+    }
+
+#mypage .event-information .event-navi ul li > * {
+    height: auto;
+    line-height: 16px;
+}
+
+#page-title {
+    margin-bottom: 0 !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.show-time {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fm-submit {
+    border: 1px #ccc dashed;
+    color: #000;
+    display: inline-block;
+    line-height: normal;
+    font-weight: normal;
+    padding: 6px 0;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.total-list ul li {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+    .total-list ul li span:nth-child(1) {
+        font-weight: 600;
+        width: 12%;
+        float: left;
+    }
+
+    .total-list ul li span:nth-child(2) {
+        float: left;
+    }
+
+.fm-checking {
+    float: left;
+}
+
+    .fm-checking li, .radio-checking li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+        .fm-checking li:first-child, .radio-checking li:first-child {
+            margin-left: 0;
+        }
+
+input[type="radio"] {
+    height: 1.2rem;
+    width: 1.2rem;
+    vertical-align: middle;
+    margin: 0 0.4rem 0.4rem 0;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow 200ms;
+    position: relative;
+    top: 2px;
+}
+
+input[type="radio"] {
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+    input[type="radio"]:checked:before {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 0.3rem;
+        width: 0.3rem;
+        position: relative;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+
+.total-list ul li span .fs-list, .total-list ul li span textarea {
+    border: 1px #ccc solid;
+    height: auto;
+    padding: 4px 12px;
+    width: 232px;
+}
+
+.total-list ul li span textarea {
+    height: 72px;
+}
+
+.content-total, .content-alias {
+    margin: auto;
+    width: 52%;
+}
+
+.tooltip {
+    position: absolute;
+    left: -2000px;
+    background-color: #dedede;
+    padding: 5px;
+    border: 1px solid #fff;
+    width: 320px;
+    z-index: 9999;
+}
+
+    .tooltip p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #222;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+#title-subs p {
+    line-height: normal;
+    margin: 4px 0;
+}
+
+.custom-list .radio, .checkbox-container > .wpcf7-list-item {
+    width: 16%;
+    padding-left: 25px;
+    font-weight: normal;
+}
+
+#user-registration .form-wrap dl dt {
+    width: 200px;
+}
+
+.cs-box {
+    display: inline-block;
+    width: 16%;
+}
+
+.clearfix dd .cs-box:nth-of-type(n+6) {
+    margin-bottom: 15px;
+}
+
+.clearfix dd .radio:nth-of-type(n+7) {
+    margin-top: 15px;
+}
+
+    .clearfix dd .radio:nth-of-type(n+7) + span {
+        position: relative;
+        top: 8px;
+    }
+
+input[type="checkbox"] + label:before {
+    background-color: #f3f6f8;
+    border: 1px solid #dee1e5;
+    height: 18px;
+    width: 18px;
+}
+
+input[type="checkbox"] + label:hover:before {
+    border-color: #53b300;
+}
+
+input[type="checkbox"]:checked + label:before {
+    /*border-color: #53b300;
+    color: #53b300;
+    line-height: 22px;*/
+    border-color: #53b300;
+    color: transparent;
+    line-height: 22px;
+    background: url(../img/common/icon_check.svg) no-repeat center center;
+}
+
+#user-registration .form-wrap dl dd textarea.custom-wd {
+    width: 440px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-total {
+        width: 38%;
+    }
+
+    .custom-list .radio:after {
+        width: 18px;
+        height: 18px;
+        margin-top: -18px;
+    }
+
+    .radio:before, .checkbox:before {
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+
+    #user-registration .form-wrap dl dd .radio:nth-of-type(n+3) {
+        margin-top: auto;
+    }
+
+    .cs-box {
+        width: 19%;
+    }
+
+    #user-registration .form-wrap dl dd textarea.custom-wd {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .total-list ul li span:nth-child(1) {
+        width: 20%;
+    }
+
+    .content-total {
+        width: 60%;
+    }
+
+    .content-alias {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        margin: auto;
+        padding: 0;
+    }
+
+    .radio:before, .checkbox:before {
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .radio:before, .checkbox:before {
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .fm-checking li, .radio-checking li {
+        display: block;
+        margin: auto auto 10px auto;
+    }
+
+    .content-total, .content-alias {
+        width: 92%;
+    }
+
+    .custom-list .radio, .checkbox-container > .wpcf7-list-item {
+        width: 100%;
+        padding-left: 35px;
+    }
+
+        .custom-list .radio:after {
+            width: 18px;
+            height: 18px;
+            margin-top: -18px;
+        }
+
+    .radio:before, .checkbox:before {
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .cs-box {
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+    }
+
+    input[type="checkbox"] + label:before {
+        margin-right: 15px;
+    }
+
+    .clearfix dd .radio:nth-of-type(n+7) + span {
+        top: 0;
+    }
+
+    .clearfix .text {
+        margin-bottom: 10px;
+    }
+
+    #request-event-container .event-item .detail-box .status {
+        margin-top: auto;
+        line-height: normal;
+    }
+
+    #request-event-container .event-item .detail-box .title {
+        font-size: 14px;
+    }
+
+    #user-registration .form-wrap dl dd textarea.custom-wd {
+        width: 100%;
+    }
+}
+
+/* event requet result confirm */
+div.result-confirm {
+    width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.result-confirm ul li {
+    line-height: 25px;
+}
+.result-confirm ul li div.textarea {
+    padding-left:13%;
+}
+    .result-confirm ul li span:nth-child(2) {
+        float: none;
+    }
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    div.result-confirm {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+    .result-confirm ul li div.textarea {
+        padding-left:0px;
+        clear:both;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #mypage .mypage-navi .inner ul li {
+      width: 50%;
+      outline: 1px #aaa solid;
+  }
+  #mypage .mypage-navi .inner ul li.active a:after {
+      display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  #mypage .mypage-navi .inner ul li {
+      width: 100%;
+      border: 1px #aaa solid;
+  }
+  #mypage .mypage-navi .inner ul li.active a:after {
+      display: none;
+  }
+}

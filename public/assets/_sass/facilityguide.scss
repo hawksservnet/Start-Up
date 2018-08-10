@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* #
+-------------------------------------------------- */
+
+#facility-guide{
+	#page-title{
+		margin-bottom: 0;
+	}
+	#fooler-map{
+		//background: url("../img/facilityguide/bg.png") repeat top left;
+		.section-title{
+			.jp{
+				font-weight: bold;
+			}
+		}
+		.map-container{
+			position: relative;
+		}
+		.info{
+			.office-hours{
+				position: relative;
+				dt{
+					vertical-align: middle;
+					text-align: center;
+					font-size: 12px;
+					font-weight: bold;
+					border: 3px solid $border-color;
+					position: absolute;
+					top: 0; bottom: 0;
+					left: 0;
+					margin-top: auto;
+					margin-bottom: auto;
+					height: 38px;
+					line-height: 38px;
+				}
+				dd{
+					height: 22px;
+					>*{
+						font-size: 13px;
+						line-height: 1;
+					}
+					.title{
+						font-weight: bold;
+						display: inline-block;
+					}
+					.time{
+
+					}
+				}
+			}
+		}
+	}
+
+
+	#floor{
+		.section-inner{
+			.section-contents{
+				.floor-list{
+					.floor-container{
+						position: relative;
+						.text-container{
+							position: relative;
+							&:after{
+								width: 100%; height: 100%;
+								content: "";
+								display: block;
+								position: absolute;
+								background-color: #e8e6e2;
+							}
+							.text-container-inner{
+								// padding: 45px 115px 55px 50px;
+								background-color: #fff;
+								position: relative;
+								z-index: 1;
+								.title{
+									height: 42px;
+									vertical-align: middle;
+									overflow: inherit;
+									&:before{
+										display: inline-block;
+										content: "";
+										background-size: contain;
+										background-repeat: no-repeat;
+										background-position: center;
+										position: relative;
+									}
+								}
+								.text{
+
+								}
+							}
+						}
+						.photo{
+						}
+						&.no1,&.no3,&.no5{
+							.text-container{
+								.text-container-inner{
+								}
+							}
+							.photo{
+								right: 0;
+							}
+						}
+						&.no2,&.no4{
+							.text-container{
+							}
+							.photo{
+							}
+						}
+						&.no1{
+							.text-container{
+								.text-container-inner{
+									.title{
+										&:before{
+											background-image: url("../img/facilityguide/number_pin01.png");
+										}
+									}
+								}
+							}
+						}
+						&.no2{
+							.text-container{
+								.text-container-inner{
+									.title{
+										&:before{
+											background-image: url("../img/facilityguide/number_pin02.png");
+										}
+									}
+								}
+							}
+						}
+						&.no3{
+							.text-container{
+								.text-container-inner{
+									.title{
+										&:before{
+											background-image: url("../img/facilityguide/number_pin03.png");
+										}
+									}
+								}
+							}
+						}
+						&.no4{
+							.text-container{
+								.text-container-inner{
+									.title{
+										&:before{
+											background-image: url("../img/facilityguide/number_pin04.png");
+										}
+									}
+								}
+							}
+						}
+						&.no5{
+							.text-container{
+								.text-container-inner{
+									.title{
+										&:before{
+											background-image: url("../img/facilityguide/number_pin05.png");
+										}
+									}
+								}
+							}
+						}
+
+
+
+					}
+				}
+			}
+			.bg-color{
+				height: 100%;
+				top: 0;
+			}
+		}
+	}
+
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#facility-guide{
+		#fooler-map{
+			margin-bottom: -110px;
+			padding-top: 90px;
+			padding-bottom: 190px;
+			.section-title{
+				margin-bottom: 50px;
+			}
+			.map{
+				width: 1043px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.info{
+				width: 250px;
+				position: absolute;
+				right: 100px; bottom: 27px;
+				.name{
+					margin-bottom: 7px;
+					svg{
+						width: 244px;
+						height: 32px;
+					}
+				}
+				.office-hours{
+					padding-left: 90px;
+					dt{
+						width: 67px;
+					}
+					dd{
+						.title{
+							width: 60px;
+						}
+						.time{
+
+						}
+					}
+				}
+			}
+		}
+
+
+		#floor{
+			margin-bottom: 90px;
+			.section-inner{
+				padding-top: 95px;
+				padding-bottom: 100px;
+				.section-contents{
+					.floor-list{
+						.floor-container{
+							margin-bottom: 126px;
+							.text-container{
+								width: 700px;
+								top: 68px;
+								left: 3px;
+								&:after{
+									width: 100%; height: 100%;
+									top: 10px;
+									left: 10px;
+								}
+								.text-container-inner{
+									// padding: 45px 115px 55px 50px;
+									padding-top: 43px;
+									padding-bottom: 61px;
+									.title{
+										height: 42px;
+										margin-bottom: 40px;
+										padding-left: 5px;
+										&:before{
+											width: 39px; height: 55px;
+											margin-right: 23px;
+											top: 13px;
+											left: -5px;
+										}
+									}
+									.text{
+										font-size: 14px;
+										line-height: 1.78;
+									}
+									.btn{
+										margin-top: 35px;
+									}
+								}
+							}
+							.photo{
+								width: 450px;
+								position: absolute;
+								top: 0;
+								z-index: 1;
+							}
+							&.no1,&.no3,&.no5{
+								.text-container{
+									.text-container-inner{
+										padding-left: 50px;
+										padding-right: 115px;
+									}
+								}
+								.photo{
+									right: 0;
+								}
+							}
+							&.no2,&.no4{
+								.text-container{
+									float: right;
+									.text-container-inner{
+										padding-right: 50px;
+										padding-left: 115px;
+									}
+								}
+								.photo{
+									left: 0;
+								}
+							}
+
+						}
+					}
+				}
+				.bg-color{
+					height: 100%;
+					top: 0;
+				}
+			}
+		}
+
+	}
+
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+	#facility-guide{
+		#fooler-map{
+			padding-top: 23px;
+			padding-bottom: 57px;
+			.section-title{
+				height: 20px;
+				margin-bottom: 30px;
+				>*{
+					line-height: 20px;
+				}
+				.en{
+					font-size: 20px;
+				}
+				.jp{
+					width: 60px;
+					font-size: 10px;
+				}
+			}
+			.map{
+				margin-bottom: 29px;
+			}
+			.info{
+				width: 250px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 40px;
+				.name{
+					margin-bottom: 8px;
+					svg{
+						width: 100%;
+						height: auto;
+					}
+				}
+				.office-hours{
+					padding-left: 112px;
+					dt{
+						width: 85px; height: 32px;
+						font-size: 14px;
+						line-height: 32px;
+					}
+					dd{
+						>*{
+							font-size: 14px;
+						}
+						.title{
+							width: 45px;
+							display: inline-block;
+							font-weight: bold;
+						}
+						.time{
+
+						}
+					}
+				}
+			}
+		}
+
+
+		#floor{
+			.section-inner{
+				padding-top: 40px;
+				padding-bottom: 52px;
+				.section-contents{
+					.floor-list{
+						.floor-container{
+							margin-bottom: 55px;
+							.text-container{
+								margin-bottom: -100px;
+								&:after{
+									width: 100%; height: 100%;
+									top: 10px;
+									left: 10px;
+								}
+								.text-container-inner{
+									padding: 22px 15px 115px;
+									.title{
+										height: auto;
+										margin-bottom: 15px;
+										text-align: center;
+										&:before{
+											width: 39px; height: 55px;
+											margin-bottom: 20px;
+											margin-left: auto;
+											margin-right: auto;
+											display: block;
+										}
+									}
+									.text{
+
+									}
+									.btn{
+										margin-top: 25px;
+									}
+								}
+							}
+							.photo{
+								// width: 100%;
+								width : -webkit-calc(100% - 30px);
+								width : calc(100% - 30px);
+								margin-left: auto;
+								margin-right: auto;
+								z-index: 1;
+								position: relative;
+							}
+							&.no1,&.no3,&.no5{
+								.text-container{
+									.text-container-inner{
+									}
+								}
+								.photo{
+									right: 0;
+								}
+							}
+							&.no2,&.no4{
+								.text-container{
+									float: right;
+									.text-container-inner{
+									}
+								}
+								.photo{
+									left: 0;
+								}
+							}
+
+						}
+					}
+				}
+				.bg-color{
+					height: 100%;
+					top: 0;
+				}
+			}
+		}
+
+	}
+
+
+} // [ $smp END ]
+
+

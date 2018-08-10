@@ -1,0 +1,8 @@
+#mypage .mypage-navi .inner ul li {
+      float: left;
+      width: 33.33%; }
+@media only all and (max-width: 750px) {
+	#mypage .mypage-navi .inner ul li {
+      float: left;
+      width: 33.33%; }
+}

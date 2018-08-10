@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import "mixin";
+
+#magazine{
+	#information-detail-container{
+		#information-main{
+
+			div.box {
+			  width : 800px;
+			  margin: 0 auto;
+			}
+			h2 {  /* 見出しのスタイルを指定 */
+			  margin: 35px 0 20px;
+			  padding: 15px;
+			  background: #F5F5F5;
+			  border-left: solid 5px #5a8b0f;
+			  border-top-right-radius: 3px;
+			  border-bottom-right-radius: 3px;
+			  font-size: 20px;
+			}
+			p.normal {  /* 本文のスタイルを指定 */
+			  line-height: 28px;
+			  font-size: 16px;
+			  margin: 1em 0px;
+			}
+			p.naname {  /* 引用のスタイルを指定 */
+			  line-height: 28px;
+			  font-size: 16px;
+			  margin: 1em 0px;
+			  font-style: italic;
+			}
+			img.aligncenter {
+			margin: 30px;
+			}
+			div.credit {  /* クレジットのスタイルを指定 */
+			  background-color: #F5F5F5;
+			  padding: 1em 1.6em;
+			  border-radius: 4px;
+			  margin: 40px 0 20px;
+			}
+			p.credit {  /* クレジット内の文章のスタイルを指定 */
+			  line-height: 19px;
+			  font-size: 14px;
+			  margin: 0.78em 0px;
+			}
+
+		}
+	}
+}

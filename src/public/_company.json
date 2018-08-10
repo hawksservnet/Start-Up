@@ -1,0 +1,98 @@
+[
+	{
+		"name": "現在地",
+		"type": "here",
+		"lat": 35.683934,
+        "lng": 139.769984,
+		"icon": "icon_here.png",
+		"icon_size_w": 56,
+		"icon_size_h": 56,
+		"icon_posi_w": 28,
+		"icon_posi_h": 28
+
+	},
+	{
+		"name": "SoftBank",
+		"type": "trader",
+		"possible": "loan",
+		"lat": 35.68762695000247,
+        "lng": 139.77776527404785,
+		"icon": "icon_port.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "SoftBank",
+		"type": "trader",
+		"possible": "loan",
+		"lat": 35.69940749291482,
+        "lng": 139.78188514709473,
+		"icon": "icon_port.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "SoftBank",
+		"type": "trader",
+		"possible": "parking",
+		"lat": 35.69585260116239,
+        "lng": 139.77617740631104,
+		"icon": "icon_port2.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "SoftBank",
+		"type": "trader",
+		"possible": "parking",
+		"lat": 35.69564348494764,
+        "lng": 139.7805118560791,
+		"icon": "icon_port2.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "Sepika",
+		"type": "trader",
+		"possible": "loan",
+		"lat": 35.702265232154936,
+        "lng": 139.7732162475586,
+		"icon": "icon_port.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "LIONLINK",
+		"type": "trader",
+		"possible": "parking",
+		"lat": 35.68853320738875,
+        "lng": 139.7860050201416,
+		"icon": "icon_port2.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	},
+	{
+		"name": "HORSEPOWER",
+		"type": "trader",
+		"possible": "loan",
+		"lat": 35.69390082850024,
+        "lng": 139.76978302001953,
+		"icon": "icon_port.png",
+		"icon_size_w": 44,
+		"icon_size_h": 72,
+		"icon_posi_w": 22,
+		"icon_posi_h": 36
+	}
+]

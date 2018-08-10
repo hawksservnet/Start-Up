@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+/* # events detail
+-------------------------------------------------- */
+#access-container .compay-info .text-container .name {
+  font-weight: bold;
+  line-height: 1; }
+
+#access-container .access-info {
+  position: relative; }
+  #access-container .access-info:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #e4e4e3; }
+  #access-container .access-info li {
+    background-color: #fff;
+    position: relative;
+    z-index: 1; }
+    #access-container .access-info li .title {
+      font-weight: bold; }
+      #access-container .access-info li .title:before {
+        background-color: #669d11;
+        content: "";
+        display: inline-block;
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+        position: relative; }
+    #access-container .access-info li dl dt {
+      font-weight: bold; }
+
+/* PC =================================== */
+/* PC　ALL */
+@media only all and (min-width: 751px) {
+  #access-container {
+    margin-bottom: 90px; }
+    #access-container .section-inner {
+      width: 1080px;
+      position: relative;
+      padding-bottom: 60px; }
+      #access-container .section-inner:after {
+        width: 1320px;
+        height: 540px;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -80px;
+        background-color: #f3f2f0; }
+    #access-container .compay-info {
+      margin-bottom: 42px; }
+      #access-container .compay-info .logo {
+        width: 285px;
+        float: left; }
+        #access-container .compay-info .logo svg {
+          width: 285px;
+          height: 60px; }
+      #access-container .compay-info .text-container {
+        width: 705px;
+        float: right; }
+        #access-container .compay-info .text-container .name {
+          font-size: 14px;
+          margin-bottom: 5px; }
+    #access-container #access-map {
+      width: 100%;
+      height: 420px;
+      margin-bottom: 50px; }
+    #access-container .access-info {
+      display: table; }
+      #access-container .access-info:before {
+        top: 10px;
+        left: 10px; }
+      #access-container .access-info li {
+        display: table-cell;
+        width: 360px;
+        padding: 30px 0;
+        border-right: 1px solid #e4e4e3; }
+        #access-container .access-info li:last-child {
+          border: 0; }
+        #access-container .access-info li > * {
+          padding-left: 27px;
+          padding-right: 27px; }
+        #access-container .access-info li .title {
+          font-size: 18px;
+          margin-bottom: 20px; }
+          #access-container .access-info li .title:before {
+            width: 8px;
+            height: 8px;
+            margin-right: 8px;
+            top: -4px; }
+        #access-container .access-info li dl {
+          margin-bottom: 10px; } }
+
+/* PC　サイズ別 */
+/* SMP =================================== */
+@media only all and (max-width: 750px) {
+  #access-container .section-inner {
+    position: relative;
+    padding-bottom: 60px; }
+    #access-container .section-inner:after {
+      width: 100%;
+      height: 100%;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #f3f2f0; }
+  #access-container .compay-info {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    background-color: #fff; }
+    #access-container .compay-info .logo {
+      width: 235px;
+      margin-bottom: 18px; }
+      #access-container .compay-info .logo svg {
+        width: 235px;
+        height: 50px; }
+    #access-container .compay-info .text-container .name {
+      font-size: 14px;
+      margin-bottom: 5px; }
+  #access-container #access-map {
+    width: 100%;
+    height: 255px;
+    margin-bottom: 15px; }
+  #access-container .access-info {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    #access-container .access-info:before {
+      top: 10px;
+      left: 10px; }
+    #access-container .access-info li {
+      padding: 20px;
+      border-bottom: 1px solid #e4e4e3; }
+      #access-container .access-info li:last-child {
+        border-bottom: 0; }
+      #access-container .access-info li .title {
+        font-size: 15px;
+        margin-bottom: 12px; }
+        #access-container .access-info li .title:before {
+          width: 6px;
+          height: 6px;
+          margin-right: 6px;
+          top: -3px; }
+      #access-container .access-info li dl {
+        margin-bottom: 10px; } }

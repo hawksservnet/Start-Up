@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@import "mixin";
+
+@media #{$pc-all} {
+	#service{
+		padding-bottom: 90px;
+		.section-container{
+			.section-contents{
+				margin-left: -120px;
+				width: 1080px;
+				padding: 150px 120px 65px;
+				background-color: #f3f2f0;
+				position: relative;
+			}
+			.image{
+				position: absolute;
+				left: 120px;
+				width: 1080px;
+				height: 300px;
+				top: -150px;
+			}
+			.text-block{
+				display: table;
+				width: 100%;
+				margin-top: 40px;
+			}
+			.icon{
+				display: table-cell;
+				vertical-align: middle;
+				width: 86px;
+				height: 86px;
+			}
+			.title{
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 26px;
+				line-height: 34px;
+				font-weight: bold;
+				padding-left: 20px;
+				width: 360px;
+			}
+			.text{
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 14px;
+				line-height: 25px;
+				letter-spacing: .1em;
+			}
+			.action{
+				margin-top: 80px;
+			}
+			&#service01{
+				margin-top: 230px;
+				.image{
+					background: url(../img/service/photo01.jpg) no-repeat center;
+				}
+				.icon{
+					background: url(../img/service/icon01.svg) no-repeat center;
+					background-size: 86px 86px;
+				}
+			}
+			&#service02{
+				margin-top: 290px;
+				.image{
+					background: url(../img/service/photo02.jpg) no-repeat center;
+				}
+				.icon{
+					background: url(../img/service/icon02.svg) no-repeat center;
+					background-size: 86px 86px;
+				}
+			}
+			&#service03{
+				margin-top: 290px;
+				.image{
+					background: url(../img/service/photo03.jpg) no-repeat center;
+				}
+				.icon{
+					background: url(../img/service/icon03.svg) no-repeat center;
+					background-size: 86px 86px;
+				}
+			}
+
+		}
+	}
+}
+
+@media #{$smp} {
+	#service{
+		padding-bottom: 50px;
+		.section-inner{
+			margin: 0;
+		}
+		.section-container{
+			.section-contents{
+				padding: 90px 20px 40px;
+				background: #f3f2f0;
+				position: relative;
+			}
+			.image{
+				position: absolute;
+				left: 20px;
+				right: 20px;
+				height: 180px;
+				top: -90px;
+			}
+			.text-block{
+				width: 100%;
+				margin-top: 20px;
+			}
+			.icon{
+				display: table-cell;
+				vertical-align: middle;
+				width: 54px;
+				height: 54px;
+			}
+			.title{
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 16px;
+				line-height: 25px;
+				font-weight: bold;
+				padding-left: 10px;
+				white-space: nowrap;
+			}
+			.text{
+				margin-top: 13px;
+				font-size: 14px;
+				line-height: 25px;
+				letter-spacing: .1em;
+			}
+			.action{
+				margin-top: 20px;
+			}
+			&#service01{
+				margin-top: 115px;
+				.image{
+					background: url(../img/service/photo01-sp.jpg) no-repeat center;
+					background-size: cover;
+				}
+				.icon{
+					background: url(../img/service/icon01.svg) no-repeat center;
+					background-size: 54px 54px;
+				}
+			}
+			&#service02{
+				margin-top: 140px;
+				.image{
+					background: url(../img/service/photo02-sp.jpg) no-repeat center;
+					background-size: cover;
+				}
+				.icon{
+					background: url(../img/service/icon02.svg) no-repeat center;
+					background-size: 54px 54px;
+				}
+			}
+			&#service03{
+				margin-top: 140px;
+				.image{
+					background: url(../img/service/photo03-sp.jpg) no-repeat center;
+					background-size: cover;
+				}
+				.icon{
+					background: url(../img/service/icon03.svg) no-repeat center;
+					background-size: 54px 54px;
+				}
+			}
+
+		}
+	}
+}

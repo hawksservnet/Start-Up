@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Route1",
+		"type": "route",
+		"lat": 35.68288635897557,
+        "lng": 139.77991104125977,
+		"icon": "icon_route01.png",
+		"icon_size_w": 44,
+		"icon_size_h": 56,
+		"icon_posi_w": 22,
+		"icon_posi_h": 56
+	},
+	{
+		"name": "Route2",
+		"type": "route",
+		"lat": 35.69292492425683,
+        "lng": 139.7801685333252,
+		"icon": "icon_route02.png",
+		"icon_size_w": 44,
+		"icon_size_h": 56,
+		"icon_posi_w": 22,
+		"icon_posi_h": 56
+	},
+	{
+		"name": "Route3",
+		"type": "route",
+		"lat": 35.6993377906782,
+        "lng": 139.78506088256836,
+		"icon": "icon_route03.png",
+		"icon_size_w": 44,
+		"icon_size_h": 56,
+		"icon_posi_w": 22,
+		"icon_posi_h": 56
+	}
+]

@@ -1,0 +1,38 @@
+{
+  "name": "acsl",
+  "version": "1.0.0",
+  "description": "console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "es6-promise": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-frontnote": "^1.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-webserver": "^0.9.1",
+    "through2": "^2.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.12.8",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-frontnote": "^1.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-webserver": "^0.9.1",
+    "through2": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:details/acsl.git"
+  }
+}

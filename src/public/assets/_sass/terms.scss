@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* # privacy
+-------------------------------------------------- */
+
+.privacy-section{
+	border-bottom: 1px solid $border-color;
+	.title{
+		font-weight: bold;
+		position: relative;
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0; bottom: 0;
+			left: 0;
+			margin-top: auto;
+			margin-bottom: auto;
+			background-color: $key-color;
+			@include parallelogram(-10);
+		}
+	}
+	.text{
+		line-height: 1.78;
+	}
+}
+
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	.privacy-section{
+		padding-bottom: 40px;
+		margin-bottom: 45px;
+		@include pc-width;
+		.title{
+			font-size: 18px;
+			padding-left: 20px;
+			margin-bottom: 23px;
+			&:before{
+				width: 10px; height: 7px;
+			}
+		}
+	}
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+	.privacy-section{
+		padding-bottom: 20px;
+		margin-bottom: 22px;
+		@include  sp-width;
+		.title{
+			font-size: 15px;
+			padding-left: 20px;
+			margin-bottom: 15px;
+			&:before{
+				width: 7px; height: 7px;
+			}
+		}
+	}
+
+
+} // [ $smp END ]

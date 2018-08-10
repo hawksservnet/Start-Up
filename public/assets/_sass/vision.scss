@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* # vision
+-------------------------------------------------- */
+
+#vision-container{
+	#vision-inner{
+		background-color: #f3f2f0;
+		overflow: hidden;
+		position: relative;
+		.text-container{
+			position: relative;
+			&:after{
+				width: 100%; height: 100%;
+				content: "";
+				display: block;
+				position: absolute;
+				background-color: #e8e6e2;
+				opacity: 0.7;
+			}
+			.text-container-inner{
+				background-color: #fff;
+				position: relative;
+				z-index: 1;
+				.title{
+					font-weight: bold;
+					text-align: center;
+					letter-spacing: 0.15em;
+				}
+			}
+		}
+	}
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+#vision-container{
+	margin-left: 40px;
+	margin-right: 40px;
+	max-width: 3500px;
+	#vision-inner{
+		padding-top: 80px;
+		height: 1070px;
+		.text-container{
+			width: 880px;
+			margin: 0 auto;
+			&:after{
+				width: 100%; height: 100%;
+				top: 10px;
+				left: 10px;
+			}
+			.text-container-inner{
+				padding: 85px 0 280px;
+				position: relative;
+				.title{
+					font-size: 24px;
+					margin-bottom: 40px;
+				}
+				.text{
+					font-size: 16px;
+					line-height: 2.8;
+					text-align: center;
+				}
+				&:after{
+					content: "";
+					width: 770px; height: 440px;
+					display: block;
+					position: absolute;
+					top: 109px;
+					left: 0; right: 0;
+					margin: auto;
+					background: url("../img/vision/object.png") no-repeat center center;
+				}
+			}
+		}
+		.build{
+			width: 458px;
+			position: absolute;
+			top: 496px;
+			left: 0; right: 0;
+			margin: auto;
+			z-index: 2;
+		}
+	}
+	.town-bg{
+		position: absolute;
+		bottom: 0;
+		width: 100%; height: 969px;
+		background: url("../img/vision/bg-pc.png") no-repeat center bottom;
+		background-size: 3500px 969px;
+	}
+}
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+#vision-container{
+	max-width: 3200px;
+	#vision-inner{
+		padding-top: 35px;
+		padding-bottom: 230px;
+		.text-container{
+			margin: 0 20px;
+			&:after{
+				width: 100%; height: 100%;
+				top: 10px;
+				left: 10px;
+			}
+			.text-container-inner{
+				padding: 40px 30px 150px;
+				position: relative;
+				.title{
+					font-size: 16px;
+					margin-bottom: 20px;
+				}
+				.text{
+					line-height: 1.87;
+				}
+			}
+		}
+		.build{
+			width: 276px;
+			position: absolute;
+			bottom: -125px;
+			left: 0; right: 0;
+			margin: auto;
+			z-index: 2;
+		}
+	}
+	.town-bg{
+		position: absolute;
+		bottom: 0;
+		width: 100%; height: 309.5px;
+		background: url("../img/vision/bg-smp.png") no-repeat center bottom;
+		background-size: 665px 309.5px;
+	}
+}
+
+} // [ $smp END ]

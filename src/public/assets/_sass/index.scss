@@ -1,0 +1,1203 @@
+@charset "utf-8";
+
+@import "mixin";
+
+/* #kv
+-------------------------------------------------- */
+
+#top{
+	#loader-container{
+		#loader-container-inner{
+			#loader{
+				// top: 0;
+				// left: 0;
+			}
+		}
+	}
+}
+
+#kv-container{
+	position: relative;
+	overflow: hidden;
+	#kv-inner{
+		width: 100%; height: 100%;
+		position: relative;
+		background: url("../img/index/kv_bg.png?2") no-repeat center center;
+		background-size: cover;
+	}
+	#kv-copy{
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		margin: auto;
+		overflow: hidden;
+		#kv-copy-inner{
+			overflow: hidden;
+		}
+	}
+	#kv-scroll-container{
+		position: absolute;
+		left: 0; right: 0;
+		margin-right: auto;
+		margin-left: auto;
+		.text{
+			@include font-en;
+			text-align: center;
+			line-height: 1;
+		}
+		.arrow{
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+			position: relative;
+			svg{
+				position: absolute;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				margin: auto;
+			}
+		}
+	}
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#loader-container{
+		#loader-container-inner{
+			#loader{
+				width: 114px; height: 115px;
+				top: 112px; left: 26px;
+				svg{
+					width: 114px; height: 115px;
+				}
+			}
+		}
+	}
+
+	#kv-container{
+		#kv-inner{
+		}
+		#kv-copy{
+			width: 690px; height: 300px;
+			svg{
+				width: 690px; height: 300px;
+			}
+		}
+		#kv-scroll-container{
+			width: 50px;
+			bottom: 30px;
+			.text{
+				font-size: 14px;
+				margin-bottom: 7px;
+			}
+			.arrow{
+				width: 50px; height: 50px;
+				svg{
+					width: 5px; height: 15px;
+				}
+			}
+		}
+	}
+
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+	#loader-container{
+		#loader-container-inner{
+			#loader{
+				width: 80px; height: 93px;
+				top: 75px; left: 20px;
+				svg{
+					width: 80px; height: 93px;
+				}
+			}
+		}
+	}
+
+
+	#kv-container{
+		#kv-inner{
+		}
+		#kv-copy{
+			width: 320px; height: 156px;
+			svg{
+				width: 320px; height: 156px;
+			}
+		}
+		#kv-scroll-container{
+			width: 50px;
+			bottom: 30px;
+			.text{
+				font-size: 14px;
+				margin-bottom: 7px;
+			}
+			.arrow{
+				width: 50px; height: 50px;
+				svg{
+					width: 5px; height: 15px;
+				}
+			}
+		}
+	}
+
+
+} // [ $smp END ]
+
+
+/* # concept
+-------------------------------------------------- */
+
+#concept{
+	.text-container{
+		.text{
+			display: block;
+			overflow: hidden;
+		}
+	}
+	#concept-list{
+		li{
+			position: relative;
+			cursor: pointer;
+			.list-inner{
+				width: 100%; height: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: 1;
+				position: relative;
+				.title{
+					font-weight: bold;
+					color: #fff;
+					text-align: center;
+					overflow: hidden;
+					*{
+						font-weight: bold;
+					}
+				}
+			}
+			.cover-container{
+				width: 100%; height: 100%;
+				background-color: rgba(102,157,17,0.9);
+				position: absolute;
+				bottom: 0; right: 0;
+				.cover-inner{
+					width: 100%;
+					overflow: hidden;
+					position: absolute;
+					top: 0; bottom: 0;
+					margin-top: auto;
+					margin-bottom: auto;
+					.cover-title{
+						text-align: center;
+						*{
+							font-weight: bold;
+						}
+					}
+				}
+				*{
+					color: #fff;
+				}
+				.trigger{
+					position: absolute;
+					right: 0; bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#concept{
+		padding-top: 90px;
+		padding-bottom: 100px;
+		.section-inner{
+			.section-title{
+				float: left;
+			}
+			.text-container{
+				width: 600px;
+				float: right;
+			}
+			#concept-list{
+				clear: both;
+				padding-top: 185px;
+				li{
+					width: 330px; height: 475px;
+					float: left;
+					margin-right: 45px;
+					.list-inner{
+						.icon{
+							width: 95px; height: 95px;
+							margin: 0 auto 20px;
+							padding-top: 129px;
+							svg{
+								width: 95px; height: 95px;
+							}
+						}
+						.title{
+							font-size: 20px;
+						}
+					}
+					&.no1{
+						top: -160px;
+						.list-inner{
+							background-image: url("../img/index/concept_bg1.png");
+						}
+					}
+					&.no2{
+						top: -80px;
+						.list-inner{
+							background-image: url("../img/index/concept_bg2.png");
+						}
+					}
+					&.no3{
+						margin-right: 0;
+						.list-inner{
+							background-image: url("../img/index/concept_bg3.png");
+						}
+					}
+					.cover-container{
+						.cover-inner{
+							>*{
+								padding-left: 35px;
+								padding-right: 35px;
+							}
+							.cover-title{
+								font-size: 20px;
+								margin-bottom: 30px;
+							}
+						}
+						.trigger{
+							width: 14px; height: 14px;
+							line-height: 14px;
+							padding: 13px;
+						}
+					}
+				}
+			}
+		}
+
+		.bg-color{
+			height: 360px;
+			bottom: 170px;
+		}
+
+		.bg-icon{
+			&.no1{
+				display: none; //→
+			}
+			&.no2{
+				display: none; //？
+			}
+			&.no3{
+				margin-left: -132px; top: 248px; //！
+			}
+			&.no4{
+				display: none; //吹出し
+			}
+			&.no5{
+				margin-left: -148px; bottom: 25px; //階段
+			}
+			&.no6{
+				margin-left: -615px; top: 625px; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				margin-left: 474px; top: 270px; //○○
+			}
+			&.no9{
+				display: none; //□□
+			}
+			&.no10{
+				margin-left: -342px; top: 795px; //+
+			}
+		}
+
+	}
+
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+	#concept{
+		padding-top: 45px;
+		padding-bottom: 75px;
+		.section-inner{
+			.section-title{
+			}
+			.text-container{
+				margin-bottom: 30px;
+			}
+			#concept-list{
+				li{
+					width: 100%; height: 200px;
+					margin-bottom: 20px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+					.list-inner{
+						.icon{
+							width: 73px; height: 73px;
+							margin: 0 auto 17px;
+							padding-top: 36px;
+							svg{
+								width: 73px; height: 73px;
+							}
+						}
+						.title{
+							font-size: 16px;
+						}
+					}
+					&.no1{
+						.list-inner{
+							background-image: url("../img/index/concept_bg1.png?2");
+						}
+					}
+					&.no2{
+						.list-inner{
+							background-image: url("../img/index/concept_bg2.png?2");
+						}
+					}
+					&.no3{
+						.list-inner{
+							background-image: url("../img/index/concept_bg3.png?2");
+						}
+					}
+					.cover-container{
+						.cover-inner{
+							>*{
+							}
+							.cover-title{
+								// font-size: 20px;
+								// margin-bottom: 30px;
+							}
+						}
+						.trigger{
+							width: 12px; height: 12px;
+							line-height: 12px;
+							padding: 9px;
+						}
+					}
+				}
+			}
+		}
+
+		.bg-color{
+			height: 360px;
+			bottom: 170px;
+		}
+
+		.bg-icon{
+			&.no1{
+				display: none; //→
+			}
+			&.no2{
+				display: none; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				margin-left: -129px; bottom: 20px; //吹出し
+			}
+			&.no5{
+				margin-left: 117px; top: 60px; //階段
+			}
+			&.no6{
+				display: none; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				margin-left: 125px; bottom: -18px; //○○
+			}
+			&.no9{
+				display: none; //□□
+			}
+			&.no10{
+				display: none; //+
+			}
+		}
+
+	}
+
+
+} // [ $smp END ]
+
+
+/* # how_to_use
+-------------------------------------------------- */
+
+#how_to_use{
+	.section-inner{
+		.section-title{
+			.en{
+			}
+			.jp{
+			}
+		}
+		.text-container{
+			.title,.text{
+				overflow: hidden;
+			}
+			.text{
+			}
+		}
+		#how_to_use-list{
+			position: relative;
+			li{
+				width: 100%;
+				position: relative;
+				&:before{
+					content: "";
+					display: block;
+					position: absolute;
+					background: url("../img/common/arrow_down_green.svg") no-repeat center bottom;
+					background-size: contain;
+				}
+				&.done{
+					&:before{
+					}
+				}
+				&.no1{
+					z-index: 4;
+				}
+				&.no2{
+					z-index: 3;
+				}
+				&.no3{
+					z-index: 2;
+					&:before{
+						display: none;
+					}
+				}
+				&.no4{
+					z-index: 1;
+					&:before{
+						display: none;
+					}
+				}
+				.list-inner{
+					// width : -webkit-calc(100% - 220px) ;
+					// width : calc(100% - 220px) ;
+					position: relative;
+					z-index: 1;
+					.no{
+						background-color: $key-color;
+						color: #fff;
+						vertical-align: middle;
+						text-align: center;
+						font-weight: bold;
+						position: absolute;
+						@include font-en;
+					}
+					.text-container{
+						.title{
+
+						}
+						.text{
+							font-size: 14px;
+							line-height: 1.78;
+						}
+					}
+				}
+				.list-bg{
+					width: 100%; height: 100%;
+					background-color: rgba(123,122,121,0.1);
+					position: absolute;
+					top: 0; left: 0;
+					.bg{
+						width: 100%; height: 100%;
+						background-color: #fff;
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+
+	.bg-color{
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#how_to_use{
+		margin-bottom: 105px;
+		.section-inner{
+			padding-top: 100px;
+			padding-bottom: 70px;
+			#how_to_use-list{
+				left: 20px;
+				margin-bottom: 50px;
+				li{
+					&:before{
+						width: 16px; height: 55px;
+						left: 210px; bottom: -40px;
+						@include parallelogram(-10);
+					}
+					.list-inner{
+						padding-left: 130px;
+						padding-right: 90px;
+						padding-top: 40px;
+						padding-bottom: 60px;
+						.no{
+							width: 45px; height: 55px;
+							font-size: 20px;
+							line-height: 55px;
+							@include parallelogram(-10);
+							left: -25px;
+							top: 0; bottom: 0;
+							margin-top: auto;
+							margin-bottom: auto;
+						}
+						.illust{
+							width: 300px;
+							float: left;
+							img{
+								width: auto;
+							}
+						}
+						.text-container{
+							width: 560px;
+							// float: right;
+							position: absolute;
+							top: 0; bottom: 0;
+							right: 90px;
+							margin-top: auto;
+							margin-bottom: auto;
+							.title{
+
+							}
+							.text{
+								font-size: 14px;
+								line-height: 1.78;
+							}
+						}
+					}
+					&.no1{
+						margin-bottom: -15px;
+						.list-inner{
+							.illust{
+								img{
+									height: 160px;
+								}
+							}
+						}
+					}
+					&.no2{
+						margin-bottom: -15px;
+						.list-inner{
+							.illust{
+								margin-top: 25px;
+								margin-left: -35px;
+								img{
+									height: 160px;
+								}
+							}
+						}
+					}
+					&.no3{
+						.list-inner{
+							.illust{
+								margin-top: 36px;
+								margin-left: -30px;
+								img{
+									height: 122px;
+								}
+							}
+						}
+					}
+					.list-bg{
+						@include parallelogram(-10);
+						.bg{
+							top: -10px; left: -10px;
+						}
+					}
+				}
+			}
+		}
+		.bg-icon{
+			&.no1{
+				margin-left: -620px; top: 445px; //→
+			}
+			&.no2{
+				display: none; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				margin-left: 590px; top: 140px; //吹出し
+			}
+			&.no5{
+				display: none; //階段
+			}
+			&.no6{
+				margin-left: 593px; bottom: 105px; //△
+			}
+			&.no7{
+				margin-left: -620px; bottom: 250px; //電球
+			}
+			&.no8{
+				display: none; //○○
+			}
+			&.no9{
+				margin-left: 126px; top: 96px; //□□
+			}
+			&.no10{
+				margin-left: 586px; top: 624px; //+
+			}
+		}
+	}
+
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+
+	#how_to_use{
+		margin-bottom: 65px;
+		.section-inner{
+			padding-top: 48px;
+			padding-bottom: 48px;
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 20px;
+			padding-right: 5px;
+			#how_to_use-list{
+				@include sp-width;
+				li{
+					margin-bottom: 17px;
+					&:before{
+						width: 16px; height: 55px;
+						bottom: -40px;
+						left: 0; right: 0;
+						margin-left: auto;
+						margin-right: auto;
+					}
+					.list-inner{
+						padding-left: 17px;
+						padding-right: 25px;
+						padding-top: 25px;
+						padding-bottom: 23px;
+						.no{
+							width: 50px; height: 50px;
+							font-size: 20px;
+							line-height: 50px;
+							@include parallelogram(-10);
+							left: -25px;
+							top: 52px;
+						}
+						.illust{
+							text-align: center;
+							padding-top: 5px;
+							padding-bottom: 10px;
+							img{
+								display: inline-block;
+								width: auto;
+							}
+						}
+						.text-container{
+							.title{
+								text-align: center;
+							}
+							.text{
+								font-size: 14px;
+								line-height: 1.78;
+							}
+						}
+					}
+					&.no1{
+						.list-inner{
+							.illust{
+								img{
+									height: 120px;
+								}
+							}
+						}
+					}
+					&.no2{
+						.list-inner{
+							.illust{
+								img{
+									height: 107px;
+								}
+							}
+						}
+					}
+					&.no3{
+						.list-inner{
+							.illust{
+								img{
+									height: 85px;
+								}
+							}
+						}
+					}
+					.list-bg{
+						width: 100% !important;
+						.bg{
+							top: -10px; left: -10px;
+						}
+					}
+				}
+			}
+		}
+		.bg-icon{
+			&.no1{
+				left: 4px; top: 120vw; //→
+			}
+			&.no2{
+				margin-left: -132px; top: 85px; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				left: 15px; bottom: 156px; //吹出し
+			}
+			&.no5{
+				left: inherit; right: 10px; top: 292px; //階段
+			}
+			&.no6{
+				display: none; //△
+			}
+			&.no7{
+				margin-left: -620px; bottom: 250px; //電球
+			}
+			&.no8{
+				left: inherit; right: -10px; bottom: 140px; //○○
+			}
+			&.no9{
+				left: inherit; right: 0px; top: 618px; //□□
+			}
+			&.no10{
+				display: none; //+
+			}
+		}
+	}
+
+} // [ $smp END ]
+
+
+/* # events
+-------------------------------------------------- */
+
+#no-events-list{
+	border: 4px solid $border-color;
+	.title{
+		@include font-en;
+		text-align: center;
+		*{
+			font-weight: bold;
+		}
+	}
+	.text{
+		text-align: center;
+	}
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+	#events{
+		margin-bottom: 95px;
+		#no-events-list{
+			padding-top: 75px;
+			padding-bottom: 75px;
+			.title{
+				font-size: 30px;
+			}
+		}
+		.bg-icon{
+			&.no1{
+				margin-left: 562px; top: 320px; //→
+			}
+			&.no2{
+				margin-left: 270px; top: 0px; //？
+			}
+			&.no3{
+				margin-left: 494px; bottom: -78px; //！
+			}
+			&.no4{
+				display: none; //吹出し
+			}
+			&.no5{
+				margin-left: -630px; top: 403px; //階段
+			}
+			&.no6{
+				display: none; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				display: none; //○○
+			}
+			&.no9{
+				margin-left: -224px; bottom: 10px; //□□
+			}
+			&.no10{
+				display: none; //+
+			}
+		}
+	}
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+	#events{
+		margin-bottom:  72px;
+		#no-events-list{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			.title{
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			.text{
+				text-align: center;
+			}
+		}
+		.bg-icon{
+			&.no1{
+				display: none; //→
+			}
+			&.no2{
+				margin-left: -115px; top: -69px; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				display: none; //吹出し
+			}
+			&.no5{
+				display: none; //階段
+			}
+			&.no6{
+				display: none; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				display: none; //○○
+			}
+			&.no9{
+				display: none; //□□
+			}
+			&.no10{
+				left: 11px; top: -20px; //+
+			}
+		}
+	}
+} // [ $smp END ]
+
+/* # information
+-------------------------------------------------- */
+
+#infomation{
+	.section-inner{
+	}
+	.bg-color{
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+}
+
+/* PC =================================== */
+
+/* PC　ALL */
+@media #{$pc-all} {
+
+	#fixed-btn{
+		// height: 320px;
+		position: fixed;
+		// top: 0; bottom: 0;
+		// right: -130px;
+		// margin-top: auto;
+		// margin-bottom: auto;
+		z-index: 1000;
+		>*{
+			// @include rotate(-90);
+			// position: relative;
+			// bottom: -130px;
+		}
+	}
+
+	#infomation{
+		margin-bottom: 90px;
+		.section-inner{
+			padding-top: 95px;
+			padding-bottom: 70px;
+		}
+		#infomation-list{
+			margin-bottom: 50px;
+			article{
+				height: 81px;
+				.list-inner{
+					padding: 27px 30px;
+					.date{
+						width: 135px;
+						float: left;
+						text-align: center;
+					}
+					.text{
+						width : -webkit-calc(100% - 220px) ;
+						width : calc(100% - 220px) ;
+						float: left;
+					}
+					&:before{
+						width: 23px; height: 8px;
+						right: 30px;
+					}
+				}
+				&:hover{
+					.list-inner{
+						&:before{
+							right: 10px;
+						}
+					}
+				}
+			}
+		}
+		.bg-icon{
+			&.no1{
+				display: none; //→
+			}
+			&.no2{
+				display: none; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				margin-left: 328px; top: 114px; //吹出し
+			}
+			&.no5{
+				display: none; //階段
+			}
+			&.no6{
+				display: none; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				margin-left: -380px; bottom: 114px; //○○
+			}
+			&.no9{
+				display: none; //□□
+			}
+			&.no10{
+				margin-left: 492px; bottom: 88px; //+
+			}
+		}
+	}
+
+
+} // [ $pc-all END ]
+
+/* PC　サイズ別 */
+@media #{$pc-small} {
+} // [ $pc-small END ]
+
+/* SMP =================================== */
+
+@media #{$smp} {
+	#fixed-btn{
+		display: none;
+	}
+
+	#infomation{
+		.section-inner{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		#infomation-list{
+			margin-bottom: 30px;
+			@include sp-width;
+			article{
+				.list-inner{
+					padding: 18px;
+					position: relative;
+					.date{
+						margin-bottom: 10px;
+					}
+					.text{
+						width : -webkit-calc(100% - 40px) ;
+						width : calc(100% - 40px) ;
+					}
+					&:before{
+						width: 18px; height: 6px;
+						right: 15px;
+					}
+				}
+				&:hover{
+					.list-inner{
+						&:before{
+							right: 5px;
+						}
+					}
+				}
+
+			}
+		}
+		.bg-icon{
+			&.no1{
+				margin-left: -98px; top: 12px; //→
+			}
+			&.no2{
+				display: none; //？
+			}
+			&.no3{
+				display: none; //！
+			}
+			&.no4{
+				margin-left: -140px; bottom: -17px; //吹出し
+			}
+			&.no5{
+				left: inherit; right: 20px; bottom: 30px; //階段
+			}
+			&.no6{
+				left: -10px; bottom: 138px; //△
+			}
+			&.no7{
+				display: none; //電球
+			}
+			&.no8{
+				display: none; //○○
+			}
+			&.no9{
+				margin-left: 135px; top: 67px; //□□
+			}
+			&.no10{
+				display: none; //+
+			}
+		}
+	}
+
+	#modal-container{
+		width: 100%; height: 100%;
+		top: 0; left: 0;
+		position: absolute;
+		background-color: rgba(102,157,17,0.9);
+		z-index: 10000;
+		display: none;
+		#modal-inner{
+			position: absolute;
+			width: 100%;
+		    display: table;
+			#modal-contents{
+				padding-left: 25px;
+				padding-right: 25px;
+				display: table-cell;
+				vertical-align: middle;
+				#modal-content{
+					*{
+						color: #fff;
+					}
+					.title{
+						font-size: 16px;
+						text-align: center;
+						padding-bottom: 16px;
+						font-weight: bold;
+					}
+					.text{
+					}
+				}
+				#modal-close{
+					width: 50px; height: 60px;
+					margin-top: 40px;
+					margin-left: auto;
+					margin-right: auto;
+					.icon{
+						width: 40px; height: 40px;
+						margin-left: auto;
+						margin-right: auto;
+						position: relative;
+						@include rotate(45);
+						&:before,&:after{
+							content: "";
+							display: block;
+							position: absolute;
+							background-color: #fff;
+						}
+						&:before{
+							width: 100%; height: 1px;
+							left: 0;
+							top: 0; bottom: 0;
+							margin-top: auto;
+							margin-bottom: auto;
+						}
+						&:after{
+							width: 1px; height: 100%;
+							top: 0;
+							left: 0; right: 0;
+							margin-left: auto;
+							margin-right: auto;
+						}
+					}
+					.text{
+						@include font-en;
+						font-weight: bold;
+						color: #fff;
+						position: relative;
+						left: 2px;
+					}
+				}
+			}
+		}
+	}
+
+} // [ $smp END ]

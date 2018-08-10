@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "mixin";
+
+td.url_column,
+th.url_column{
+	max-width: 250px;
+	//word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
